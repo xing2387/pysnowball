@@ -1,8 +1,10 @@
+from __future__ import absolute_import
 import requests
 import json
 
-import pysnowball.cons as cons
-import pysnowball.token as token
+from . import cons
+from . import token
+
 
 def fetch(url):
     HEADERS = {'Host': 'stock.xueqiu.com',

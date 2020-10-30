@@ -1,8 +1,10 @@
+from __future__ import absolute_import
 import json
 import os
-from pysnowball import cons
-from pysnowball import api_ref
-from pysnowball import utls
+import sys
+from . import cons
+from . import api_ref
+from . import utls
 
 
 
