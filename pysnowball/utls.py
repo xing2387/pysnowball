@@ -35,7 +35,7 @@ def fetch_without_token(url):
                'Accept-Language': 'zh-Hans-CN;q=1, ja-JP;q=0.9',
                'Accept-Encoding': 'br, gzip, deflate',
                'Connection': 'keep-alive'}
-
+    print("fetch_without_token " + url)
     response = requests.get(url, headers=HEADERS)
 
     # print(url)
@@ -45,5 +45,5 @@ def fetch_without_token(url):
 
     if response.status_code != 200:
         raise Exception(response.content)
-
+    print(response.content)
     return json.loads(response.content)
